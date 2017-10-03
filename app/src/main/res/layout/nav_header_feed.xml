@@ -15,13 +15,13 @@
         android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="64dp"
+        android:layout_height="64sp"
         android:src="@drawable/photo"
-        app:civ_border_width="2dp"
+        app:civ_border_width="2sp"
         app:civ_border_color="#FF000000"/>
 
     <TextView
-        android:paddingLeft="10dp"
+        android:paddingLeft="10sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -29,7 +29,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:paddingLeft="10dp"
+        android:paddingLeft="10sp"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

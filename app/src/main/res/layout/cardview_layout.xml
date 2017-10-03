@@ -24,9 +24,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="25sp"
-                android:layout_marginStart="25sp"
-                android:layout_marginTop="15sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
                 app:srcCompat="@drawable/avatarastronaut" />
 
             <TextView
@@ -46,22 +46,26 @@
                 android:id="@+id/postImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/iconImageView"
-                android:layout_alignStart="@+id/iconImageView"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/rectangle"
+                app:srcCompat="@drawable/demoscreen"
                 android:layout_below="@+id/iconImageView"
-                app:srcCompat="@drawable/demoscreen" />
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
             <TextView
                 android:id="@+id/postHighlightTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
-                android:text="Here all highlight of any post will be shown in efficient way"
-                android:layout_below="@+id/postImageView"
+                android:layout_alignEnd="@+id/postImageView"
                 android:layout_alignLeft="@+id/postImageView"
-                android:layout_alignStart="@+id/postImageView"
                 android:layout_alignRight="@+id/postImageView"
-                android:layout_alignEnd="@+id/postImageView" />
+                android:layout_alignStart="@+id/postImageView"
+                android:layout_below="@+id/postImageView"
+                android:layout_marginTop="21dp"
+                android:text="Here all highlight of any post will be shown in efficient way" />
 
             <TextClock
                 android:id="@+id/textClock"
