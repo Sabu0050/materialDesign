@@ -7,88 +7,77 @@
     android:background="@drawable/background"
     tools:context="com.sabututexp.everyonejournalist.SignUpActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="129dp"
-        app:srcCompat="@drawable/formbg"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="320sp"
+        android:layout_height="320sp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="82dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_alignTop="@+id/backTextView"
+        android:layout_centerHorizontal="true">
 
     <EditText
         android:id="@+id/usernameEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="  Username"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
         android:layout_alignRight="@+id/signUpButton"
-        android:layout_alignEnd="@+id/signUpButton" />
+        android:layout_alignEnd="@+id/signUpButton"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp"/>
 
     <EditText
         android:id="@+id/emailEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="  Email"
         android:inputType="textEmailAddress"
         android:layout_below="@+id/usernameEditText"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginTop="10dp"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_marginBottom="20sp" />
 
     <EditText
         android:id="@+id/phoneNumberEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="  Phone Number"
         android:inputType="phone"
         android:layout_below="@+id/emailEditText"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_marginBottom="20sp" />
 
     <EditText
         android:id="@+id/passwordDEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint=" Password"
         android:inputType="textPassword"
-        android:layout_above="@+id/confirmPasswordEditText"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_marginBottom="20sp"
+        android:layout_above="@+id/confirmPasswordEditText" />
 
     <EditText
         android:id="@+id/confirmPasswordEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
         android:hint=" Confirm Password"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_marginBottom="10sp"/>
 
+
+    </LinearLayout>
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12sp"
+        android:layout_marginTop="20sp"
         android:background="@drawable/longbutton"
-        android:layout_below="@+id/confirmPasswordEditText"
+        android:layout_below="@+id/linearLayout2"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -108,8 +97,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="71dp" />
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

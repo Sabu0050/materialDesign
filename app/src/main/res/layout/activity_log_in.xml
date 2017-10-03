@@ -14,53 +14,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
-        android:layout_marginBottom="47dp"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="130sp"
-        app:srcCompat="@drawable/formbg"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp" />
+   <LinearLayout
+       android:layout_width="320sp"
+       android:layout_height="140sp"
+       android:orientation="vertical"
+       android:background="#ffffff"
+       android:id="@+id/linearLayout"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true">
 
     <EditText
         android:id="@+id/loginUserEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="  Username"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="20sp"
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/logINButton"
-        android:layout_alignEnd="@+id/logINButton"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
+        android:layout_alignEnd="@+id/logINButton" />
 
     <EditText
         android:id="@+id/loginPasswordEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint=" Password"
         android:inputType="textPassword"
-        android:layout_marginBottom="40dp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="20sp"
         android:layout_alignRight="@+id/loginUserEditText"
         android:layout_alignEnd="@+id/loginUserEditText" />
-
+   </LinearLayout>
     <Button
         android:id="@+id/logINButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
         android:background="@drawable/loginlongbutton"
-        android:layout_below="@+id/loginPasswordEditText"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
+
     <TextView
         android:id="@+id/loginTextView"
         android:textColor="#ffffff"
@@ -69,6 +67,8 @@
         android:layout_height="wrap_content"
         android:text="YOU DON'T HAVE AN ACCOUNT? REGISTER"
         android:layout_below="@+id/logINButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp" />
+
 
 </RelativeLayout>
