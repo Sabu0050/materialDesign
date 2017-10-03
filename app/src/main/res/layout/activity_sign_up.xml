@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12sp"
-        android:background="@drawable/longButton"
+        android:background="@drawable/longbutton"
         android:layout_below="@+id/confirmPasswordEditText"
         android:layout_centerHorizontal="true" />
 
@@ -104,13 +104,12 @@
     <TextView
         android:id="@+id/backTextView"
         android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textSize="60sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:text="Register"
+        android:layout_above="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25sp"
-        android:text="Sing Up" />
+        android:layout_marginBottom="71dp" />
 
 </RelativeLayout>

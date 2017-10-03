@@ -8,16 +8,6 @@
     tools:context="com.sabututexp.everyonejournalist.MainActivity">
 
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:background="@drawable/nav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
@@ -26,8 +16,6 @@
         android:text="Register"
         android:layout_alignBaseline="@+id/loginButton"
         android:layout_alignBottom="@+id/loginButton"
-        android:layout_alignLeft="@+id/progressBar"
-        android:layout_alignStart="@+id/progressBar"
         android:layout_marginLeft="20sp"
         android:layout_marginStart="20sp" />
 
@@ -35,25 +23,25 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="70dp"
         android:background="@drawable/buttonbgone"
         android:text="Log in"
-        android:layout_marginRight="20sp"
-        android:layout_marginEnd="20sp"
-        android:layout_above="@+id/progressBar"
-        android:layout_alignRight="@+id/progressBar"
-        android:layout_alignEnd="@+id/progressBar" />
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/desTextView"
         android:textColor="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/registerButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30sp"
+        android:layout_marginBottom="91dp"
         android:textSize="15sp"
-        android:text="Lorem Ipsum is simple" />
+        android:text="Lorem Ipsum is simple"
+        android:layout_above="@+id/registerButton"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -62,7 +50,7 @@
         android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70sp"
+        android:layout_marginBottom="40dp"
         android:text="Main Design"
         android:layout_above="@+id/desTextView"
         android:layout_centerHorizontal="true" />
@@ -71,9 +59,9 @@
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        app:srcCompat="@drawable/tutexpbloglogo"
         android:layout_above="@+id/titleTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70sp"
-        app:srcCompat="@drawable/tutexpbloglogo" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

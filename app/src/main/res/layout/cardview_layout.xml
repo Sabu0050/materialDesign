@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25sp"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="15sp"
+                app:srcCompat="@drawable/avatarastronaut" />
+
+            <TextView
+                android:id="@+id/userTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iconImageView"
+                android:layout_marginLeft="25sp"
+                android:layout_marginStart="25sp"
+                android:layout_toEndOf="@+id/iconImageView"
+                android:layout_toRightOf="@+id/iconImageView"
+                android:text="User Name"
+                android:textColor="#F77062"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/postImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iconImageView"
+                android:layout_alignStart="@+id/iconImageView"
+                android:layout_below="@+id/iconImageView"
+                app:srcCompat="@drawable/demoscreen" />
+
+            <TextView
+                android:id="@+id/postHighlightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="Here all highlight of any post will be shown in efficient way"
+                android:layout_below="@+id/postImageView"
+                android:layout_alignLeft="@+id/postImageView"
+                android:layout_alignStart="@+id/postImageView"
+                android:layout_alignRight="@+id/postImageView"
+                android:layout_alignEnd="@+id/postImageView" />
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iconImageView"
+                android:layout_alignLeft="@+id/userTextView"
+                android:layout_alignStart="@+id/userTextView" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
