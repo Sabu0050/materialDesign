@@ -24,9 +24,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginLeft="12sp"
+                android:layout_marginStart="12sp"
+                android:layout_marginTop="15sp"
                 app:srcCompat="@drawable/avatarastronaut" />
 
             <TextView
@@ -46,12 +46,12 @@
                 android:id="@+id/postImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
                 android:background="@drawable/rectangle"
                 app:srcCompat="@drawable/demoscreen"
+                android:layout_marginTop="10sp"
                 android:layout_below="@+id/iconImageView"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
+                android:layout_alignLeft="@+id/iconImageView"
+                android:layout_alignStart="@+id/iconImageView"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 

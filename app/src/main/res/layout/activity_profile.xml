@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sabututexp.everyonejournalist.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:background="@color/colorAccent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="PROFILE"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:background="#F9FAFB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layoutTop">
+
+        <RelativeLayout
+            android:id="@+id/layoutInsideBottom"
+            android:layout_width="400sp"
+            android:layout_height="230sp"
+            android:padding="8sp"
+            android:background="#fffffd"
+            android:layout_marginBottom="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/aboutTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:text="ABOUT"
+                android:textSize="20sp"
+                android:textColor="#F27272"/>
+            <TextView
+                android:id="@+id/aboutDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutTitleTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:text="A brown counnig fox go after the tail of all fox's in the forest"
+                android:textColor="#878787"
+                android:textSize="18sp"/>
+            <ImageView
+                android:id="@+id/facebookImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="80sp"
+                android:layout_marginLeft="60sp"
+                app:srcCompat="@drawable/facebook"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:id="@+id/twitterImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/twitter"
+                android:layout_alignTop="@+id/facebookImageView"
+                android:layout_toRightOf="@+id/facebookImageView"
+                android:layout_toEndOf="@+id/facebookImageView"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/instagramImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/instagram"
+                android:layout_alignTop="@+id/twitterImageView"
+                android:layout_toRightOf="@+id/twitterImageView"
+                android:layout_toEndOf="@+id/twitterImageView"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/googlePlusImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/googleplus"
+                android:layout_marginRight="60sp"
+                android:layout_alignTop="@+id/instagramImageView"
+                android:layout_toRightOf="@+id/instagramImageView"
+                android:layout_toEndOf="@+id/instagramImageView"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Info"
+            android:background="@drawable/designbuttonbg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp" />
+
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="120sp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2sp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginTop="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="User Name"
+        android:textSize="30sp"
+        android:textColor="#F27272"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

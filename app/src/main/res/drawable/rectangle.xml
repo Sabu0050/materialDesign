@@ -6,11 +6,11 @@
     android:useLevel="false">
 
     <corners
-        android:bottomLeftRadius="10sp"
-        android:bottomRightRadius="10sp"
-        android:radius="0.5sp"
-        android:topLeftRadius="10sp"
-        android:topRightRadius="10sp" />
+        android:bottomLeftRadius="30sp"
+        android:bottomRightRadius="30sp"
+        android:radius="30sp"
+        android:topLeftRadius="30sp"
+        android:topRightRadius="30sp" />
 
     <solid android:color="#Efffff" />
 
