@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="120sp"
-        android:src="@drawable/profile"
+        android:src="@drawable/photo"
         app:civ_border_width="2sp"
         app:civ_border_color="#FF000000"
         android:layout_marginTop="110dp"
