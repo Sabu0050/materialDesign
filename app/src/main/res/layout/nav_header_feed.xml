@@ -8,16 +8,28 @@
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile_image"
+    <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="64sp"
-        android:src="@drawable/photo"
-        app:civ_border_width="2sp"
-        app:civ_border_color="#FF000000"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="96dp"
+            android:src="@drawable/photo"
+            android:layout_height="96dp"
+            android:layout_gravity="bottom|center_horizontal"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:src="@drawable/ic_menu_camera"/>
+        />
+    </FrameLayout>
+
+
 
     <TextView
         android:paddingLeft="10sp"
