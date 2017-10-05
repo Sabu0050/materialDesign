@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sabututexp.everyonejournalist.fragments.FeedFullReportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3sp">
+
+        <RelativeLayout
+            android:id="@+id/allHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12sp"
+                android:layout_marginStart="12sp"
+                android:layout_marginTop="15sp"
+                app:srcCompat="@drawable/avatarastronaut" />
+
+            <TextView
+                android:id="@+id/userTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iconImageView"
+                android:layout_marginLeft="25sp"
+                android:layout_marginStart="25sp"
+                android:layout_toEndOf="@+id/iconImageView"
+                android:layout_toRightOf="@+id/iconImageView"
+                android:text="User Name"
+                android:textColor="#F77062"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/postImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iconImageView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/iconImageView"
+                android:layout_below="@+id/iconImageView"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/rectangle"
+                app:srcCompat="@drawable/demoscreen" />
+
+            <TextView
+                android:id="@+id/postHighlightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/postImageView"
+                android:layout_alignLeft="@+id/postImageView"
+                android:layout_alignRight="@+id/postImageView"
+                android:layout_alignStart="@+id/postImageView"
+                android:layout_below="@+id/postImageView"
+                android:layout_marginTop="21dp"
+                android:text="Here all highlight of any post will be shown in efficient way.sdnkjdvndfjnvjdfvjksdnvjkdfnvjkdfnvjhfdbvhdfbjkvndfjkvndfjnbvjdfknvkjdfnvjhbdv
+df vndf vjkdf vndf vndf nv juenfienvgrifjmcji ifncjkds vjdnv incdjsnckjanveiwenc ajncdkjsnfkjfnsdnkascfladscasdcasdc adcnldjksnckldjs ljakdnscjkadnsweiucdjvbud ijn ibniuni niou bub ioubudncjianc jnkasdcjkndcjksdn asdkncdjksnc lnasjdnckjsd " />
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iconImageView"
+                android:layout_alignLeft="@+id/userTextView"
+                android:layout_alignStart="@+id/userTextView" />
+
+            <LinearLayout
+                android:id="@+id/likeComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignmentBottom="@+id/allHolder"
+                android:orientation="horizontal"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/likeImageView"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="70sp"
+                    app:srcCompat="@drawable/like" />
+                <ImageView
+                    android:id="@+id/commentImageView"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="170sp"
+                    app:srcCompat="@drawable/comment" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

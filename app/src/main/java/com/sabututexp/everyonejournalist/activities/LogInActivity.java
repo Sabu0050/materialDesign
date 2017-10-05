@@ -1,7 +1,9 @@
-package com.sabututexp.everyonejournalist;
+package com.sabututexp.everyonejournalist.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sabututexp.everyonejournalist.R;
 
 public class LogInActivity extends AppCompatActivity {
 
