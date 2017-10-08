@@ -81,7 +81,9 @@ df vndf vjkdf vndf vndf nv juenfienvgrifjmcji ifncjkds vjdnv incdjsnckjanveiwenc
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/profilePic"
                 android:layout_alignLeft="@+id/userTextView"
-                android:layout_alignStart="@+id/userTextView" />
+                android:layout_alignStart="@+id/userTextView"
+                tools:targetApi="jelly_bean_mr1"
+                tools:ignore="NewApi" />
 
             <LinearLayout
                 android:id="@+id/likeComment"
@@ -90,7 +92,6 @@ df vndf vjkdf vndf vndf nv juenfienvgrifjmcji ifncjkds vjdnv incdjsnckjanveiwenc
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignmentBottom="@+id/allHolder"
                 android:orientation="horizontal"
                 tools:ignore="NotSibling">
 

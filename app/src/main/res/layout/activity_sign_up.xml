@@ -12,11 +12,14 @@
         android:layout_width="320sp"
         android:layout_height="320sp"
         android:id="@+id/linearLayout2"
-        android:layout_marginTop="82dp"
         android:orientation="vertical"
         android:background="#ffffff"
-        android:layout_alignTop="@+id/backTextView"
-        android:layout_centerHorizontal="true">
+        android:layout_above="@+id/signUpButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginBottom="20sp">
 
     <EditText
         android:id="@+id/usernameEditText"
@@ -27,8 +30,8 @@
         android:hint="  Username"
         android:layout_alignRight="@+id/signUpButton"
         android:layout_alignEnd="@+id/signUpButton"
-        android:layout_marginBottom="20sp"
-        android:layout_marginTop="20sp"/>
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"/>
 
     <EditText
         android:id="@+id/emailEditText"
@@ -38,7 +41,7 @@
         android:hint="  Email"
         android:inputType="textEmailAddress"
         android:layout_below="@+id/usernameEditText"
-        android:layout_marginBottom="20sp" />
+        android:layout_marginBottom="10sp" />
 
     <EditText
         android:id="@+id/phoneNumberEditText"
@@ -48,7 +51,7 @@
         android:hint="  Phone Number"
         android:inputType="phone"
         android:layout_below="@+id/emailEditText"
-        android:layout_marginBottom="20sp" />
+        android:layout_marginBottom="10sp" />
 
     <EditText
         android:id="@+id/passwordDEditText"
@@ -57,7 +60,7 @@
         android:ems="10"
         android:hint=" Password"
         android:inputType="textPassword"
-        android:layout_marginBottom="20sp"
+        android:layout_marginBottom="10sp"
         android:layout_above="@+id/confirmPasswordEditText" />
 
     <EditText
@@ -75,9 +78,11 @@
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
+        android:text="SIGN UP"
+        android:textColor="#F27272"
         android:background="@drawable/longbutton"
-        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="15sp"
+        android:layout_above="@+id/loginTextView"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -86,9 +91,10 @@
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signUpButton"
+        android:text="ALREADY HAVE AN ACCOUNT? LOG IN"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="ALREADY HAVE AN ACCOUNT? LOG IN" />
+        android:layout_marginBottom="15sp" />
 
     <TextView
         android:id="@+id/backTextView"
@@ -97,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="90sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 

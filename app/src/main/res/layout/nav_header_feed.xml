@@ -16,17 +16,19 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profilePic"
-            android:layout_width="96dp"
+            android:layout_width="60sp"
             android:src="@drawable/photo"
-            android:layout_height="96dp"
+            android:layout_height="60sp"
             android:layout_gravity="bottom|center_horizontal"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_camera"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_gravity="top|right"
-            android:src="@drawable/ic_menu_camera"/>
+            android:src="@drawable/shutter"
+            app:civ_border_overlay="true"
+            app:civ_fill_color="#FFFFFF" />
         />
     </FrameLayout>
 

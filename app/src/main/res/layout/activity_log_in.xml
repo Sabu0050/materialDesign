@@ -46,7 +46,7 @@
         android:ems="10"
         android:hint=" Password"
         android:inputType="textPassword"
-        android:layout_marginBottom="20sp"
+        android:layout_marginBottom="10sp"
         android:layout_alignRight="@+id/loginUserEditText"
         android:layout_alignEnd="@+id/loginUserEditText" />
    </LinearLayout>
@@ -54,8 +54,10 @@
         android:id="@+id/logINButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/loginlongbutton"
-        android:layout_marginTop="75dp"
+        android:background="@drawable/longbutton"
+        android:text="LOG IN"
+        android:textColor="#F27272"
+        android:layout_marginTop="75sp"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true" />
 

@@ -138,9 +138,13 @@
         app:civ_border_width="1sp"
         app:civ_border_overlay="true"
         app:civ_fill_color="#FFFFFF"
-        android:layout_marginTop="120sp"
-        android:layout_marginLeft="222sp"
-        android:src="@drawable/shutter"/>
+        android:layout_marginTop="10dp"
+        android:src="@drawable/shutter"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginRight="7sp"
+        android:layout_marginEnd="7sp" />
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"

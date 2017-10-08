@@ -90,7 +90,6 @@ df vndf vjkdf vndf vndf nv juenfienvgrifjmcji ifncjkds vjdnv incdjsnckjanveiwenc
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignmentBottom="@+id/allHolder"
                 android:orientation="horizontal"
                 tools:ignore="NotSibling">
 
