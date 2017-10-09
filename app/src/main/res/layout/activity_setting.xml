@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sabututexp.everyonejournalist.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/photo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2sp" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:text="User Name\n address"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120sp"
+            app:srcCompat="@drawable/pen" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFFF2"
+        android:layout_below="@+id/linearLayout3">
+        <LinearLayout
+            android:id="@+id/linearLayoutSwitchHolder"
+            android:layout_width="390sp"
+            android:layout_height="140sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFFFD"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="40sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="5sp"
+                android:text="Water Switch" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="5sp"
+                android:text="Fire Switch" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="5sp"
+                android:text="Wind Switch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRadioHolder"
+            android:layout_width="390sp"
+            android:layout_height="130sp"
+            android:orientation="vertical"
+            android:background="#FFFFFD"
+            android:layout_marginBottom="5sp"
+            android:layout_below="@+id/linearLayoutSwitchHolder"
+            android:layout_alignLeft="@+id/linearLayoutSwitchHolder"
+            android:layout_alignStart="@+id/linearLayoutSwitchHolder">
+
+            <RadioGroup
+                android:id="@+id/radios"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:inputType="text"
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="right"
+                android:background="#FFFFFF"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="Earth Radio Button"
+                android:button="@null"
+                android:layout_marginLeft="5sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="right"
+                android:background="#FFFFFF"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="Jupitar Radio Button"
+                android:button="@null"
+                android:layout_marginLeft="5sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="right"
+                android:background="#FFFFFF"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="Venus Radio Button"
+                android:button="@null"
+                android:layout_marginLeft="5sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheckBoxHolder"
+            android:layout_width="390sp"
+            android:layout_height="130sp"
+            android:background="#FFFFFD"
+            android:layout_alignLeft="@+id/linearLayoutRadioHolder"
+            android:layout_alignStart="@+id/linearLayoutRadioHolder"
+            android:layout_below="@+id/linearLayoutRadioHolder"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10sp"
+                android:text="Buger CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10sp"
+                android:text="Pizza CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10sp"
+                android:text="Pasta CheckBox" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutCheckBoxHolder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/designbuttonbg"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

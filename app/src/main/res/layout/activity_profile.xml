@@ -10,7 +10,7 @@
         android:id="@+id/layoutTop"
         android:layout_width="match_parent"
         android:layout_height="170sp"
-        android:background="@color/colorAccent">
+        android:background="@drawable/rectangle">
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"

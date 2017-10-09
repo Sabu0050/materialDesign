@@ -23,10 +23,12 @@
         <activity
             android:name=".activities.FeedActivity"
             android:label="@string/title_activity_feed"
-            android:theme="@style/AppTheme">
-            </activity>
-
+            android:theme="@style/AppTheme" />
         <activity android:name=".activities.ProfileActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>
